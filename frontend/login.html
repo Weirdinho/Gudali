@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="icon" href="icon/gudali-icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <div><img src="icon/gudali-icon.png" alt="Gudali Icon" /></div>
+      </div>
+      <div class="mid" id="myDiv">
+        <div id="welcome_tag"></div>
+        <div class="head-3">
+          <div class="right" onclick="menu()">
+            <i class="bx bx-expand"></i>
+          </div>
+        </div>
+        <a href="/">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/cart">Cart</a>
+        <a
+          id="logout-link"
+          class="button"
+          style="display: none"
+          href="/"
+          onclick="logout()"
+          >Logout</a
+        >
+      </div>
+      <p id="welcome-message"></p>
+      <div class="right" onclick="menu()">
+        <i class="bx bx-menu"></i>
+      </div>
+    </header>
+
+    <div class="body-0"></div>
+    <i class="bx bx-chevron-up-circle scroll-up-btn"></i>
+
+    <div class="container">
+      <!-- Add this placeholder element where the message will appear -->
+<div id="notification"></div>
+
+      <input type="checkbox" id="flip" />
+      <div class="cover">
+        <div class="front">
+          <img src="icon/cute-cow.jpg" alt="" />
+          <div class="text">
+            <span class="text-1"
+              >Every new friend is a <br />
+              new adventure</span
+            >
+            <span class="text-2">Let's get connected</span>
+          </div>
+        </div>
+        <div class="back">
+          <img class="backImg" src="icon/twin-cow.jpg" alt="" />
+          <div class="text">
+            <span class="text-1"
+              >Complete miles of journey <br />
+              with one step</span
+            >
+            <span class="text-2">Let's get started</span>
+          </div>
+        </div>
+      </div>
+      <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+            <form action="#">
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter your Username"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+
+                <div class="text" id="forgotPassword"><a href="#">Forgot password?</a></div>
+                <div class="button input-box">
+                  <input type="submit" value="Login" id="submit1" />
+                </div>
+                <div class="text sign-up-text">
+                  Don't have an account? <label for="flip">Sigup now</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="signup-form">
+            <div class="title">Signup</div>
+            <form action="#">
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    id="username2"
+                    placeholder="Enter your Username"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    id="password2"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <div class="button input-box">
+                  <input type="submit" value="Register" id="submit2" />
+                </div>
+                <div class="text sign-up-text">
+                  Already have an account? <label for="flip">Login now</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

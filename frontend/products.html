@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angus</title>
+    <link rel="stylesheet" href="css/products&marketting.css" />
+    <link rel="icon" href="icon/gudali-icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <div class="background">
+      <header>
+        <div class="left">
+          <div><img src="icon/gudali-icon.png" alt="" /></div>
+        </div>
+        <div class="message-mid"><p id="welcome-message"></p></div>
+        <div class="mid" id="myDiv">
+          <div id="welcome_tag"></div>
+          <div class="head-3">
+            <div class="right" onclick="menu()">
+              <i class="bx bx-expand"></i>
+            </div>
+          </div>
+
+          <a href="/">Home</a>
+          <a href="/courses">Courses</a>
+          <a href="/cart">Cart</a>
+
+          <!-- Cart counter -->
+
+          <!-- Placeholder for welcome message -->
+            <a id="login-link" href="/login" class="button" onclick="saveLastPage()"
+              >SignIn/Up</a
+            >
+          <a
+            id="logout-link"
+            class="button"
+            style="display: none"
+            href="/"
+            onclick="logout()"
+            >Logout</a
+          >
+
+          <!-- Logout link -->
+        </div>
+
+        <div class="right" onclick="menu()">
+          <i class="bx bx-menu"></i>
+        </div>
+      </header>
+      <div class="body-0"></div>
+      <i class="bx bx-chevron-up-circle scroll-up-btn"></i>
+
+      <div class="body-1">
+        <div class="body-1-left">
+          <h1>Cattle Products and By-Products</h1>
+          <p>
+            Cattle are a significant source of animal protein globally, and
+            their by-products contribute substantially to economic value. In
+            fact, by-products account for 66% of a cattle’s live weight and
+            11.4% of the gross income from cattle (Liu, 2009). These by-products
+            serve a variety of purposes, ranging from food production to
+            industrial applications.
+          </p>
+        </div>
+        <div class="body-1-right">
+          <img src="icon/cow-products.webp" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="card">
+        <a href="#meat" class="active"
+          ><h3>MEAT</h3>
+          <img src="cow-products-removed/raw_meat-removebg-preview.png" alt=""
+        /></a>
+      </div>
+      <div class="card">
+        <a href="#diary">
+          <h3>DIARY PRODUCTS</h3>
+          <img
+            src="cow-products-removed/diary-products_pink-removebg-preview.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="card">
+        <a href="#hides">
+          <h3>HIDES AND SKIN</h3>
+          <img
+            src="cow-products-removed/raw_hides_and_skin-removebg-preview.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="card">
+        <a href="#fat">
+          <h3>ANIMAL FAT</h3>
+          <img src="cow-products-removed/removed-cooking-lard.png" alt=""
+        /></a>
+      </div>
+      <div class="card">
+        <a href="#horns"
+          ><h3>HORNS AND HOOVES</h3>
+          <img src="cow-products-removed/horns-removebg-preview.png" alt=""
+        /></a>
+      </div>
+      <div class="card">
+        <a href="#gelatin">
+          <h3>GELATIN</h3>
+          <img src="cow-products-removed/gelatin-removebg-preview.png" alt=""
+        /></a>
+      </div>
+      <div class="card">
+        <a href="#bone"
+          ><h3>BONE MEAL</h3>
+          <img src="cow-products-removed/bone_meal-removebg-preview.png" alt=""
+        /></a>
+      </div>
+      <div class="card">
+        <a href="#blood">
+          <h3>BLOOD MEAL</h3>
+          <img src="cow-products/blood-meal.webp" alt=""
+        /></a>
+      </div>
+      <div class="card">
+        <a href="#rumen">
+          <h3>RUMEN</h3>
+          <img
+            src="cow-products-removed/rumen_lining-removebg-preview.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="card">
+        <a href="#manure">
+          <h3>MANURE</h3>
+          <img src="cow-products-removed/manure-removebg-preview.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="body-3">
+      <div class="meat" id="meat">
+        <div class="b-3-r">
+          <h1>MEAT</h1>
+          <p>
+            Meat is primarily used for consumption in Nigeria, and some of its
+            uses are as follows
+          </p>
+          <ol>
+            <li>
+              Steaks: Cuts like Ribeye, sirloin are often grilled or pan-seared.
+            </li>
+            <li>
+              Ground beef: Used in burgers,meatballs, koftas, tacos and sauces.
+            </li>
+            <li>
+              Roasts: Cuts like chuck and brisket are slow-cooked or roasted.
+            </li>
+            <li>
+              Jerky(Kilishi): Thin strips of beef that are dried and seasoned as
+              snack.
+            </li>
+            <li>
+              Ponmo: Cow skin that is usually sold in markets after being
+              processed by roasting, boiling or smoking.
+            </li>
+            <li>
+              Broth: Made by simmering bones and meat, used in soups and stews.
+            </li>
+            <li>
+              Sausages: Beef can also be grounded and mixed with seasonings for
+              sausage.
+            </li>
+            <li>Stir Fry: Sliced beef is often used in some cuisines.</li>
+            <li>Ribs: Often barbecued or smoked, ribs are a popular cut.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="meat" id="diary">
+        <div class="b-3-r">
+          <h1>DIARY PRODUCTS</h1>
+          <p>
+            Diary products, which are derived from milk, have a wide range of
+            uses especially in a range of culinary uses
+          </p>
+          <ol>
+            <li>
+              Milk: consumes as beverage, added to cofee and tea, and sometimes
+              used in baking and cooking.
+            </li>
+            <li>
+              Cheese: used in pizza, sandwiches, salad and pasta, sometimes
+              eaten as a snack aswell.
+            </li>
+            <li>
+              Butter: used for cooking, baking, sauteing, frying and sometimes
+              added as a spread for bread or pastries.
+            </li>
+            <li>
+              Yogurt: consumed as a snack or desert, often plain, and is also
+              used in smoothies.
+            </li>
+            <li>
+              Cream: Whipped cream is used as dessert topping, while Heavy cream
+              is used for making soups and custard.
+            </li>
+            <li>
+              Ice Cream: A popular frozen dessert available in various flavors.
+            </li>
+            <li>
+              Ghee: Clarified butter used in Indian cooking, baking and frying.
+            </li>
+            <li>
+              Whey: A by-product of cheese-making, used in protein supplements
+              or baking.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="meat" id="hides">
+        <div class="b-3-r">
+          <h1>HIDES AND SKIN</h1>
+          <p>
+            Cow hide and skin are valuable byproducts of cattle widely used in
+            various industries. Here are some primary uses
+          </p>
+          <ol>
+            <li>
+              Leather Production: used for the production of Clothing, Footwear,
+              Furniture Upholstery, Bags and Accessories.
+            </li>
+            <li>
+              Rugs and Decor: used in the making of essential household items
+              like Rugs, Wall Hangings, Pillows and Blankets.
+            </li>
+            <li>
+              Musical Instruments: cow hides can also be used for the production
+              of musical instruments such as Drum Skins and Bagpipes.
+            </li>
+            <li>
+              Sporting Equipment: used in the production of some equpments used
+              by athletes like Baseball Gloves and Footballs.
+            </li>
+            <li>
+              Industrial Uses: used in the production of sturdy materials used
+              for heavy-duty tools like Leather Work Gloves, Tool Belt and
+              Aprons.
+            </li>
+            <li>
+              Traditonal Crafts: used in the production of olden day materials
+              used in their day to day activities like Shields and other
+              Crafting Items.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="meat" id="fat">
+        <div class="b-3-r">
+          <h1>ANIMAL FAT</h1>
+          <p>
+            Animal fat derived from cows has a range of uses. Here are some
+            primary uses
+          </p>
+          <ol>
+            <li>
+              Culinary Uses: used for culinary consumption such as Cooking,
+              Frying, Baking, Shortening, Spread.
+            </li>
+            <li>
+              Soap and Skincare: Animal fats particularly tallows are known for
+              being used in Soap Making and Moisturisers
+            </li>
+            <li>
+              Candle and Lamp Fuel: Historically, Tallow was used to make
+              Candles and Oil Lamps due to its ability to burn slowly
+            </li>
+            <li>
+              Industrial Uses: Fats are also known to be used in industries for
+              the production of things like Biodiseal, Lubricants and Leather
+              Conditioning
+            </li>
+            <li>
+              Animal Feeds: Fat can be added to animal feeds as a form of
+              supplements to increase growth
+            </li>
+            <li>
+              Pharmaceutical Medicines: Animal fats are well known in making the
+              base of Medicial Ointments, Capsules and Coatings
+            </li>
+            <li>
+              Traditional Uses: in some cultures, Fats are uses as primary
+              Cooking Oils and Preservatives
+            </li>
+            <li>
+              Cosmetics: rendered animal fats are used in some cosmetics like
+              Lip Balm, Shaving Cream and Lotions
+            </li>
+            <li>
+              Cultural and Religious Practices: in some Religions or Cultures,
+              fats are used for items like Tallow Lamps and sometimes in some
+              Food Traditions
+            </li>
+          </ol>
+        </div> 
+      </div>
+      <div class="meat" id="horns">
+        <div class="b-3-r">
+          <h1>Horns and Hooves</h1>
+          <p>
+            The Horns and Hooves of cows have various applications. Here are
+            some primary uses
+          </p>
+          <ol>
+            <li>
+              Crafting and Decorative Items: horns are carved and polished to
+              make decorative Items like ornamental objects, jewelry and music
+              instruments.
+            </li>
+            <li>
+              Fertilizer: Horns and hooves are used in Biodynamic Farming
+              because they are filled with manure and are buried in the ground
+              as part of soil enrichment practice known as "HORN MANURE" or "BD
+              500".
+            </li>
+            <li>
+              Animal Feed: grounded hooves and horns are sometimes processed
+              into protein-rich supplements for feeds.
+            </li>
+            <li>
+              Combs and Buttons: Polished horns are known to be used in
+              household materials like Combs and Buttons becauseof its
+              durability.
+            </li>
+            <li>
+              Glue: the keratin in cow hooves and horns is used to make
+              traditional animal glue which is used for woodwork, bookbinding
+              and restoration of antiques.
+            </li>
+            <li>
+              Industrial Uses: hooves and horns are used in the extraction of
+              keratin (a protein used in various industrial applications like
+              hair and skincare products due to its strenghtening properties).
+            </li>
+            <li>
+              Medicine and Pharmaceuticals: In some cultures, horns and hooves
+              are used in traditional medicine, for example "Kaho" is an art of
+              using Horn to remove poisonous blood from the body.
+            </li>
+            <li>
+              Tools and Utensils: polished horns are shaped into spoons, forks,
+              handle on knives and hammer handles.
+            </li>
+            <li>
+              Cultural and Ceremonial Uses: some cultures like Red Indians view
+              horns as ceremonial objects, trophies and decorative pieces.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="meat" id="gelatin">
+        <div class="b-3-r">
+          <h1>GELATIN</h1>
+          <p>
+            Gelatin, derived from the collagen found in the connective tissues
+            of animals (mainly cattle). Below are some
+            key uses of gelatin:
+          </p>
+          <ol>
+            <li>
+              Food Industry : Gelatin is widely used in making food items like
+              confectionary, diary products, meat products, baking and
+              clarification.
+            </li>
+            <li>
+              Pharmaceutical Industry: Gelatin is used to make Pharmaceutical
+              items such as capsules, supplements, wound care.
+            </li>
+            <li>
+              Cosmetic Industry: Gelatin is included in beauty products such as
+              skin care, nail care and hair care products due to its collagen
+              content.
+            </li>
+            <li>
+              Medical Applications: In addition to capsules, gelatin is used in
+              other drug delivery systems to deliver drugs in controlled
+              dosages. other uses are surgucal and orthopedic.
+            </li>
+            <li>
+              Glue: the keratin in cow hooves and horns is used to make
+              traditional animal glue which is used for woodwork, bookbinding
+              and restoration of antiques.
+            </li>
+            <li>
+              Industrial Uses: gelatin is also used in the industrial of items
+              like adhersives, paper coating and photography.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="meat" id="bone">
+        <div class="b-3-r">
+          <h1>BONE MEAL</h1>
+          <p>
+            Bone meal, made from the crushed and ground bones of animals
+            (typically cattle), is rich in calcium and phosphorus, making it
+            highly useful in various fields. Below are some of its primary uses:
+          </p>
+          <ol>
+            <li>
+              Fertilizer for Plants : Bone meal is widely used in gardening and
+              agriculture as a natural fertilizer, It is rich in phosphorus (a
+              key nutrient for plant growth), calcium, and some nitrogen.
+            </li>
+            <li>
+              Animal Feed: Bone meal is used as a mineral supplement in
+              livestock feed. It provides essential calcium and phosphorus,
+              which are vital for the development of bones and eggshell
+              formation in poultry.
+            </li>
+            <li>
+              Human Nutritional Supplements: Bone meal has historically been
+              used as a dietary calcium and phosphorus supplement for humans
+              which is crucial for cell functioning and bone formation.
+            </li>
+            <li>
+              Soil Remediation: Bone meal can be used in environmental
+              applications for soil remediation, particularly in areas
+              contaminated by heavy metals.
+            </li>
+            <li>
+              Craft and Industrial Uses : In the ceramics industry, bone meal is
+              a key component in the production of high-quality porcelain known
+              as "bone china."
+            </li>
+            <li>
+              Organic Farming and Sustainable Agriculture: Bone meal is valued
+              in organic farming as a natural, organic-approved source of
+              essential nutrients. It is a popular alternative to synthetic
+              fertilizers for gardeners and farmers seeking eco-friendly methods
+              of enriching the soil.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="meat" id="blood">
+        <div class="b-3-r">
+          <h1>BLOOD MEAL</h1>
+          <p>
+            Blood meal, a by-product of animal slaughter, is made by drying and
+            grinding animal blood. Below are its primary uses:
+          </p>
+          <ol>
+            <li>
+              Fertilizer for Plants : Blood meal is widely used as a natural,
+              organic fertilizer. It is one of the richest sources of nitrogen,
+              a key nutrient for promoting lush, green growth in plants.
+            </li>
+            <li>
+              Feed Additive for Livestock: Blood meal is used as a high-protein
+              supplement in animal feed, particularly for poultry and sometimes
+              fish. It is rich in essential amino acids like lysine, which helps
+              animals grow and maintain muscle mass.
+            </li>
+            <li>
+              Pest Repellent: Blood meal can be used as a natural deterrent for
+              pests like deer, rabbits, and moles in gardens. The strong scent
+              of blood meal is unpleasant to these animals, helping to keep them
+              away from crops and plants.
+            </li>
+            <li>
+              Organic Gardening and Farming: Blood meal is popular in organic
+              gardening and farming due to its natural origin and slow-release
+              properties. It provides a sustainable alternative to synthetic
+              nitrogen fertilizers, promoting eco-friendly and sustainable
+              agricultural practices.
+            </li>
+            <li>
+              Soil Remediation : Blood meal is sometimes used in environmental
+              soil remediation projects to replenish depleted soils. Its high
+              nitrogen content can help restore balance to soils that have been
+              stripped of essential nutrients due to over-farming or
+              contamination.
+            </li>
+            <li>
+              Industrial Uses: In industrial applications, blood meal can be
+              used as a natural binder or adhesive in products such as plywood,
+              paper, and textiles. Blood meal may also be used in the production
+              of fire extinguishing foams.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="meat" id="rumen">
+        <div class="b-3-r">
+          <h1>RUMEN</h1>
+          <p>
+            The rumen is the largest of the four compartments in the stomach of
+            ruminant animals. It plays a critical role in the digestion of
+            herbivores that consume large amounts of fibrous plants. Here are
+            some key uses:
+          </p>
+          <ol>
+            <li>
+              Animal Feed :Once the animal is slaughtered, the contents of the
+              rumen can be processed into feed for livestock, especially for
+              herbivorous animals and poultry.
+            </li>
+            <li>
+              Fertilizer: The digested plant material found in the rumen (known
+              as rumen digesta) is often used as an organic fertilizer. It is
+              rich in nitrogen and other nutrients, which help enhance soil
+              fertility, promoting healthy plant growth.
+            </li>
+            <li>
+              Biogas Production: Rumen content can be used in biogas production,
+              where it is broken down anaerobically to release methane, which
+              can then be used as a renewable energy source.
+            </li>
+            <li>
+              Source of Enzymes: Rumen microbes and enzymes are harvested and
+              studied for various industrial uses. Rumen enzymes help break down
+              cellulose and lignin, making them useful in industries focused on
+              biofuel production, waste management, and animal feed processing.
+            </li>
+            <li>
+              Pharmaceutical Applications: Rumen contents and its enzymes are
+              studied for potential applications in pharmaceuticals,
+              particularly in digestion-related research.
+            </li>
+            <li>
+              Industrial Uses: Using rumen contents in feed, compost, and biogas
+              production helps minimize waste from slaughterhouses and contains
+              water-soluble vitamins that are beneficial for herbivores.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="meat" id="manure">
+        <div class="b-3-r">
+          <h1>MANURE</h1>
+          <p>
+            Manure, a natural by-product of animal digestion.Below
+            are the key uses of manure:
+          </p>
+          <ol>
+            <li>
+              Fertilizer: Manure is a rich source of essential plant nutrients,
+              including nitrogen (N), phosphorus (P), and potassium (K), which
+              are vital for plant growth. It also contains trace minerals such
+              as calcium, magnesium, and sulfur.
+            </li>
+            <li>
+              Composting: Manure is often mixed with other organic materials,
+              such as crop residues or leaves, to produce compost. Composting
+              manure reduces odor, stabilizes nutrients, and makes them more
+              available to plants.
+            </li>
+            <li>
+              Pasture Improvement: Manure is applied directly to grazing lands
+              to restore soil fertility, encouraging the growth of nutrient-rich
+              grasses for livestock. This method promotes healthy forage
+              production without the need for chemical fertilizers.
+            </li>
+            <li>
+              Greenhouse Gas Mitigation: Manure helps sequester carbon in the
+              soil, reducing greenhouse gas emissions. When added to soil, it
+              enhances organic carbon levels, helping mitigate the effects of
+              climate change.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <div class="f-1">
+          <h2>Contact Us</h2>
+          <p>Phone: +234 906 070 4863</p>
+          <p>Mail: ruruwhygee@gmail.com</p>
+          <p>Address: 41 Jabi Road,Kaduna Nigeria</p>
+          <div class="f-1-1">
+            <div>
+              <a href="https://twitter.com/umargusau_"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/umargusau_/"
+                ><i class="bx bxl-instagram-alt"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/umar-gusau-983900308"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.snapchat.com/add/umar_gusau"
+                ><i class="bx bxl-snapchat"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="f-2">
+          <h2>Follow Us</h2>
+          <div>
+            <a href="https://twitter.com/umargusau_"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/umargusau_/"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/umar-gusau-983900308"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.snapchat.com/add/umar_gusau"
+              ><i class="bx bxl-snapchat"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          <i class="bx bxs-copyright"></i>2024 <span>Gudali</span>, All Rights
+          Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/landing-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N'Dama</title>
+    <link rel="stylesheet" href="css/fulani-white.css" />
+    <link rel="icon" href="icon/gudali-icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bod">
+      <header>
+        <div class="left">
+          <div><img src="icon/gudali-icon.png" alt="" /></div>
+        </div>
+        <div class="message-mid"><p id="welcome-message"></p></div>
+        <div class="mid" id="myDiv">
+          <div id="welcome_tag"></div>
+          <div class="head-3">
+            <div class="right" onclick="menu()">
+              <i class="bx bx-expand"></i>
+            </div>
+          </div>
+  
+          <a href="/">Home</a>
+          <a href="/courses">Courses</a>
+          <a href="/cart">Cart</a>
+  
+          <!-- Cart counter -->
+  
+          <!-- Placeholder for welcome message -->
+          <a id="login-link" href="/login" class="button" onclick="saveLastPage()"
+          >SignIn/Up</a
+        >
+  
+          <a
+            id="logout-link"
+            class="button"
+            style="display: none"
+            href="/"
+            onclick="logout()"
+            >Logout</a
+          >
+  
+          <!-- <li id="welcome-message" style="color: saddlebrown;"></li> -->
+          <!-- Logout link -->
+        </div>
+  
+        <div class="right" onclick="menu()">
+          <i class="bx bx-menu"></i>
+        </div>
+      </header>
+      
+      <div class="body-0"></div>
+      <i class="bx bx-chevron-up-circle scroll-up-btn"></i>
+
+      <div class="body-1-owner">
+        <div class="body-1">
+          <h1>N'DAMA</h1>
+          <div class="body-1-top">
+            <div class="body-1-top-left">
+              <h1>Overview</h1>
+              <p>
+                N’dama cattle are native to Senegambia and adjacent parts of
+                West Africa (Starkey, 1984; Blench et al., 1998; Babayemi et
+                al., 2014). They were first introduced to Nigeria from Guinea in
+                1939 on an experimental basis due to their trypano-tolerance and
+                larger size compared to Muturu (Starkey, 1984; Blench et al.,
+                1998).
+              </p>
+              <h1>Physical Characteristics</h1>
+              <p>
+                N’dama cattle have a medium-sized, compact body with lyre-shaped
+                black-tipped horns and no hump. They have a small dewlap in
+                males and a fairly large head. Although those imported into
+                Nigeria are generally light brown, there are black and pied
+                animals in Guinea.
+              </p>
+            </div>
+            <div class="body-1-top-right">
+              <h1>Introduction and Breeding</h1>
+              <p>
+                N’dama cattle were sold to farmers and pastoralists to improve
+                the resistance of local herds to trypanosomiasis. In most cases,
+                herders cross them with Zebu, resulting in few pure N’dama
+                outside institutions. However, some pure N’dama were recorded in
+                Northern Yoruba land (Blench, 1993; Meghen et al., 1999).
+              </p>
+            </div>
+          </div>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/pAJt8RtwfMg?si=vJk3_8IgLYIwDq_L"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="foot">
+          <div class="f-1">
+            <h2>Contact Us</h2>
+            <p>Phone: +234 906 070 4863</p>
+            <p>Mail: ruruwhygee@gmail.com</p>
+            <p>Address: 41 Jabi Road,Kaduna Nigeria</p>
+            <div class="f-1-1">
+              <div>
+                <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+              </div>
+              <div>
+                <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="f-2">
+            <h2>Follow Us</h2>
+            <div>
+              <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div>
+              <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            <i class="bx bxs-copyright"></i>2024 <span>Gudali</span>, All Rights
+            Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/landing-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Bororo</title>
+    <link rel="stylesheet" href="css/fulani-white.css" />
+    <link rel="icon" href="icon/gudali-icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bod">
+      <header>
+        <div class="left">
+          <div><img src="icon/gudali-icon.png" alt="" /></div>
+        </div>
+        <div class="message-mid"><p id="welcome-message"></p></div>
+        <div class="mid" id="myDiv">
+          <div id="welcome_tag"></div>
+          <div class="head-3">
+            <div class="right" onclick="menu()">
+              <i class="bx bx-expand"></i>
+            </div>
+          </div>
+  
+          <a href="/">Home</a>
+          <a href="/courses">Courses</a>
+          <a href="/cart">Cart</a>
+  
+          <!-- Cart counter -->
+  
+          <!-- Placeholder for welcome message -->
+          <a id="login-link" href="/login" class="button" onclick="saveLastPage()"
+          >SignIn/Up</a
+        >
+  
+          <a
+            id="logout-link"
+            class="button"
+            style="display: none"
+            href="/"
+            onclick="logout()"
+            >Logout</a
+          >
+  
+          <!-- <li id="welcome-message" style="color: saddlebrown;"></li> -->
+          <!-- Logout link -->
+        </div>
+  
+        <div class="right" onclick="menu()">
+          <i class="bx bx-menu"></i>
+        </div>
+      </header>
+     
+      <div class="body-0"></div>
+      <i class="bx bx-chevron-up-circle scroll-up-btn"></i>
+
+      <div class="body-1">
+        <h1>RED BORORO (RAHAJI)</h1>
+        <div class="body-1-top">
+         
+          <div class="body-1-top-left">
+            <h1>Overview</h1>
+            <p>
+              The Red Bororo, also known as Rahaji, is the third most numerous
+              breed of cattle in Nigeria, representing 22% of the national herd.
+            </p>
+            <h1>Geographical Distribution</h1>
+            <p>
+              The Rahaji breed is well adapted to arid and semi-arid regions.
+              During the wet season, they are rarely found further south than
+              Kaduna, except for an isolated population on the Mambila Plateau
+              in the North-East (Blench, 1993; Meghen et al., 1999).
+            </p>
+          </div>
+          <div class="body-1-top-right">
+            <h1>Physical Characteristics</h1>
+            <p>
+              The Rahaji is one of the largest Zebu breeds and is distinguished
+              by its deep burgundy-colored coat, pendulous ears, and long, thick
+              horns (Katie & Alistair, 1986; Williamson & Payne, 1990).
+            </p>
+            <h1>Cultural Significance</h1>
+            <p>
+              Fulani pastoralists consider the Rahaji an extremely prestigious
+              breed, and many herds of ‘white’ cattle include a few Rahaji for
+              crossbreeding purposes. Despite their prestigious status, the
+              Rahaji breed faces challenges as it does not tolerate
+              <!-- humidity-related diseases or poor nutrition (Blench, 1993). A
+              notable example is the Fulani clan named Rahaji, who traditionally
+              herded this breed. They have been obliged to exchange their stock
+              for Bunaji cattle as they moved south into the Middle Belt due to
+              high mortality among the ‘red’ animals (Meghen et al., 1999). -->
+            </p>
+          </div>
+        </div>
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/uhTnbSaqRSg?si=2fXyRfp3gWdSDzMe"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <footer>
+        <div class="foot">
+          <div class="f-1">
+            <h2>Contact Us</h2>
+            <p>Phone: +234 906 070 4863</p>
+            <p>Mail: ruruwhygee@gmail.com</p>
+            <p>Address: 41 Jabi Road,Kaduna Nigeria</p>
+            <div class="f-1-1">
+              <div>
+                <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+              </div>
+              <div>
+                <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="f-2">
+            <h2>Follow Us</h2>
+            <div>
+              <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div>
+              <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            <i class="bx bxs-copyright"></i>2024 <span>Gudali</span>, All Rights
+            Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/landing-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity</title>
+    <link rel="stylesheet" href="css/fulani-white.css" />
+    <link rel="icon" href="icon/gudali-icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bod">
+      <header>
+        <div class="left">
+          <div><img src="icon/gudali-icon.png" alt="" /></div>
+        </div>
+        <div class="message-mid"><p id="welcome-message"></p></div>
+        <div class="mid" id="myDiv">
+          <div id="welcome_tag"></div>
+          <div class="head-3">
+            <div class="right" onclick="menu()">
+              <i class="bx bx-expand"></i>
+            </div>
+          </div>
+  
+          <a href="/">Home</a>
+          <a href="/courses">Courses</a>
+          <a href="/cart">Cart</a>
+  
+          <!-- Cart counter -->
+  
+          <!-- Placeholder for welcome message -->
+          <a id="login-link" href="/login" class="button" onclick="saveLastPage()"
+            >SignIn/Up</a
+          >
+  
+          <a
+            id="logout-link"
+            class="button"
+            style="display: none"
+            href="/"
+            onclick="logout()"
+            >Logout</a
+          >
+  
+          <!-- <li id="welcome-message" style="color: saddlebrown;"></li> -->
+          <!-- Logout link -->
+        </div>
+  
+        <div class="right" onclick="menu()">
+          <i class="bx bx-menu"></i>
+        </div>
+      </header>
+      <div class="body-0"></div>
+      <div class="body-1-owner">
+        <div class="body-1">
+          <h1>Cultural Importance of Cattle in Nigeria</h1>
+          <p class="body-1-p">
+            Cattle hold significant cultural and social value in Nigeria. They
+            are not only a source of food and income but also a symbol of status
+            and tradition, especially among pastoralist communities.
+          </p>
+          <div class="body-1-top">
+            <div class="body-1-top-left">
+              <h1>Social Status and Cultural Practices</h1>
+              <p>
+                Among pastoralists, cattle symbolize wealth, power, and social
+                standing. Cattle are often used as gifts or for paying bride
+                prices in traditional rites, serving as a form of family wealth
+                (Payne & Wilson, 1999). They are a crucial part of marriages,
+                weddings, sacrifices, and funerals (Tibi & Aphunu, 2010).
+              </p>
+              <h1>Role in Ceremonial and Religious Functions</h1>
+              <p>
+                Cattle play a vital role in many Nigerian cultural and religious
+                practices. They are often seen as sacred animals used for
+                sacrifices and religious worship in various traditional
+                societies. Their ownership enhances the prestige of families and
+                individuals, reflecting the owner’s social standing in the
+                community.
+              </p>
+            </div>
+            <div class="body-1-top-right">
+              <h1>Cattle as Experimental and Research Subjects</h1>
+              <p>
+                Cattle have been used as experimental animals, contributing to
+                significant advances in scientific research, particularly in the
+                study of milk fat synthesis and ruminant physiology (Payne &
+                Wilson, 1999).
+              </p>
+              <h1>Recreational and Touristic Value</h1>
+              <p>
+                Bulls are sometimes kept in recreational parks for tourism
+                activities, and their presence can serve as a symbol of wealth
+                and prestige in society. Cattle also function as "mobile banks"
+                for nomadic populations, providing security and acting as
+                insurance against crop failure for mixed-farm producers (Payne &
+                Wilson, 1999).
+              </p>
+              <h1>Symbol of Family Wealth and Insurance</h1>
+              <p>
+                In traditional farming communities, cattle are more than just livestock; they represent security and stability. In times of hardship or crop failure, cattle can be sold or used to sustain the family, ensuring food and economic security.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="foot">
+          <div class="f-1">
+            <h2>Contact Us</h2>
+            <p>Phone: +234 906 070 4863</p>
+            <p>Mail: ruruwhygee@gmail.com</p>
+            <p>Address: 41 Jabi Road,Kaduna Nigeria</p>
+            <div class="f-1-1">
+              <div>
+                <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+              </div>
+              <div>
+                <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="f-2">
+            <h2>Follow Us</h2>
+            <div>
+              <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div>
+              <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            <i class="bx bxs-copyright"></i>2024 <span>Gudali</span>, All Rights
+            Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/landing-page.js"></script>
+  </body>
+</html>

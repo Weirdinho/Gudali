@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keteku</title>
+    <link rel="stylesheet" href="css/fulani-white.css" />
+    <link rel="icon" href="icon/gudali-icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bod">
+      <header>
+        <div class="left">
+          <div><img src="icon/gudali-icon.png" alt="" /></div>
+        </div>
+        <div class="message-mid"><p id="welcome-message"></p></div>
+        <div class="mid" id="myDiv">
+          <div id="welcome_tag"></div>
+          <div class="head-3">
+            <div class="right" onclick="menu()">
+              <i class="bx bx-expand"></i>
+            </div>
+          </div>
+  
+          <a href="/">Home</a>
+          <a href="/courses">Courses</a>
+          <a href="/cart">Cart</a>
+  
+          <!-- Cart counter -->
+  
+          <!-- Placeholder for welcome message -->
+          <a id="login-link" href="/login" class="button" onclick="saveLastPage()"
+              >SignIn/Up</a
+            >
+  
+          <a
+            id="logout-link"
+            class="button"
+            style="display: none"
+            href="/"
+            onclick="logout()"
+            >Logout</a
+          >
+  
+          <!-- <li id="welcome-message" style="color: saddlebrown;"></li> -->
+          <!-- Logout link -->
+        </div>
+  
+        <div class="right" onclick="menu()">
+          <i class="bx bx-menu"></i>
+        </div>
+      </header>
+   
+      <div class="body-0"></div>
+      <i class="bx bx-chevron-up-circle scroll-up-btn"></i>
+
+      <div class="body-1-owner">
+        <div class="body-1">
+          <h1>KETEKU</h1>
+          <div class="body-1-top">
+            <div class="body-1-top-left">
+              <h1>Overview</h1>
+              <p>
+                The distribution and productivity of Keteku cattle have been
+                studied in detail by Blench et al. (1998). The definition of
+                Keteku has become more problematic in recent years due to an
+                increasing proportion of Zebu blood in Keteku herds.
+              </p>
+              <h1>Physical Characteristics and Varieties</h1>
+              <p>
+                The Borgu Keteku, also known as Kataku, Ketari, Borgu, Borgawa,
+                and Kaiama, is a trypano-tolerant, stabilized Muturu x Zebu
+                cross (Gates, 1952). This breed combines Muturu and Bunaji
+                features with white, grey, and black types predominating, and
+                occasionally red and brown. Compared to the Muturu, the Keteku
+                has longer horns but a smaller hump, and shorter legs than the
+                Bunaji.
+              </p>
+              <h1>Genetic Composition & Cultural Influence</h1>
+              <p>
+                As Fulani pastoral herds push further south, they increasingly
+                inhabit regions previously restricted to trypano-tolerant stock.
+                This has led to more Zebu stock being incorporated into village
+                herds. For instance, the 'Biu', a Zebu x Savannah Muturu cross
+                found near Biu in southern Borno and described in the literature
+                (Gates, 1952), has become submerged in the local Zebu gene pool.
+                Thus, the name Keteku may reflect the owner's cultural
+                background as much as the animal's genetic composition.
+                <br />Population Estimates <br />
+                ILCA (1979) estimated 180,000 Keteku in Nigeria. <br />
+                Recent assessments suggest Keteku are significantly less common,
+                with a population unlikely to exceed 100,000 of all types.
+              </p>
+            </div>
+            <div class="body-1-top-right">
+              <h1>Geographical Distribution</h1>
+              <p>
+                In Nigeria, Keteku herds are restricted to a narrow band along
+                the Benin Republic border in the region known as 'Borgu'.
+                Further east, Keteku are occasionally kept adjacent to villages
+                in Northern Yoruba land. The West African dwarf shorthorn was
+                once common in this region, and the Keteku fills the same niche
+                (Blench, 1993; Meghen et al., 1999).
+              </p>
+              <h1>Farmer's Practices & Government Initiatives</h1>
+              <p>
+                Farmers in the Ondo area sometimes buy Keteku as investment
+                stock due to their combination of size and trypano-tolerance.
+                Keteku were formerly distributed from breeding farms as part of
+                livestock extension programs. The Government Livestock Centre in
+                Ado-Ekiti maintains a stock of Keteku (Blench, 1993; Meghen et
+                al., 1999).
+              </p>
+              <h1>Cross-Breeding Patterns</h1>
+              <p>
+                In contrast to other West African countries, there has been very
+                little new crossing of Zebu and Muturu in Southern Nigeria. The
+                lack of cross-breeding along the contact line between the two
+                types is surprising. Among the Igbo, farmers tend to believe
+                that the two breeds are incompatible and that cross-breeding
+                would conflict with religious strictures. On the Jos Plateau,
+                the continuing genetic separation likely reflects ethnic
+                competition between livestock farmers rather than animal
+                production considerations (Blench, 1993; Meghen et al., 1999).
+              </p>
+            </div>
+          </div>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/D_MYqyrRE3Q?si=_ivPbyDTfruNLSj_"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="foot">
+          <div class="f-1">
+            <h2>Contact Us</h2>
+            <p>Phone: +234 906 070 4863</p>
+            <p>Mail: ruruwhygee@gmail.com</p>
+            <p>Address: 41 Jabi Road,Kaduna Nigeria</p>
+            <div class="f-1-1">
+              <div>
+                <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+              </div>
+              <div>
+                <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="f-2">
+            <h2>Follow Us</h2>
+            <div>
+              <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div>
+              <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            <i class="bx bxs-copyright"></i>2024 <span>Gudali</span>, All Rights
+            Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/landing-page.js"></script>
+  </body>
+</html>

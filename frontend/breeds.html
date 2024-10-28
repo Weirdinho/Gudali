@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angus</title>
+    <link rel="stylesheet" href="css/breeds.css" />
+    <link rel="icon" href="icon/gudali-icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> 
+  </head>
+  <body class="body-body">
+    <header>
+      <div class="left">
+        <div><img src="icon/gudali-icon.png" alt="" /></div>
+      </div>
+      <div class="message-mid"><p id="welcome-message"></p></div>
+      <div class="mid" id="myDiv">
+        <div id="welcome_tag"></div>
+        <div class="head-3">
+          <div class="right" onclick="menu()">
+            <i class="bx bx-expand"></i>
+          </div>
+        </div>
+
+        <a href="/">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/cart">Cart</a>
+
+        <!-- Cart counter -->
+
+        <!-- Placeholder for welcome message -->
+        <a id="login-link" href="/login" class="button" onclick="saveLastPage()"
+          >SignIn/Up</a
+        >
+
+        <a
+          id="logout-link"
+          class="button"
+          style="display: none"
+          href="/"
+          onclick="logout()"
+          >Logout</a
+        >
+
+        <!-- <li id="welcome-message" style="color: saddlebrown;"></li> -->
+        <!-- Logout link -->
+      </div>
+
+      <div class="right" onclick="menu()">
+        <i class="bx bx-menu"></i>
+      </div>
+    </header>
+    <div class="body-0"></div>
+    <i class="bx bx-chevron-up-circle scroll-up-btn"></i>
+    <div class="body-1">
+      <h1>
+        Indigenous Breeds of Cattle, their Productivity, Economic and Cultural
+        values in Nigeria
+      </h1>
+    </div>
+    <div class="body-2" id="body-2">
+    <!-- breeds dynamically loaded from the backend -->
+    </div>
+    <div class="body-3">
+      <div><h1>CATTLE HERD SIZE AND PRODUCTIVITY IN NIGERIA</h1></div>
+      <div class="body-3-info">
+        <div class="herd-size">
+          <h3>Herd Size</h3>
+          <p>
+            Optimum herd size for an area and for a population can only be
+            estimated after many variables have been considered. A theoretical
+            concept of optimum herd size takes account of the prevailing
+            environmental conditions, biological capacity (performance) of the
+            species, herd management practice, and resource use and
+            distribution. For the pastoral Fulani of Northern Nigeria, none of
+            these factors are static; therefore, optimum herd size is dynamic,
+            varying by a wide margin, depending on the circumstance of the
+            individual pastoralist...
+            <span><a href="/herd-size">Read more</a></span>
+          </p>
+        </div>
+        <div class="herd-size">
+          <h3>Reproduction Performance</h3>
+          <p>
+            Reproduction is the most important factor in determining
+            profitability in a cow/calf enterprise. To maintain a calving
+            interval of 365 days, a cow must re-breed in 80 to 85 days after
+            calving. Poor reproductive performance is directly linked to the
+            percentage of body fat in cows. Researchers have determined that, a
+            certain amount of body fat is required for the reproductive system
+            to function, since inadequate nutrition is most often the cause of
+            poor reproductive performance...
+            <span><a href="/reproduction">Read more</a></span>
+          </p>
+        </div>
+        <div class="herd-size">
+          <h3>Productivity</h3>
+          <p>
+            Protein, energy and minerals are the most critical nutrients
+            affecting milk and beef production in the semi-arid areas. Some
+            reports have suggested that, energy and minerals are not limiting
+            nutrients to grazing cattle, but attributed losses in cattle
+            productivity to deficiencies in protein. However, reported that,
+            during the early to mid-wet season, rangelands are not adequate
+            sources of energy and minerals. This results in low cattle growth
+            rates during this period and stands as a major constraint to
+            increasing body weight gains and consequently affecting beef
+            production in the semi-arid areas...
+            <span><a href="/productivity">Read more</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="body-4">
+      <div>
+        <h1>ECONOMIC AND CULTURAL IMPORTANCE OF CATTLE</h1>
+      </div>
+      <div class="econ-imp">
+        <div class="economic">
+          <h3>Economic</h3>
+          <p>
+            Nigeria is one of the leading countries in cattle production in
+            sub-Saharan Africa. For example, in 2018, it was reported that, the
+            country had over 14.73 million cattle consisting of1.47 million
+            milking cows and 13.26 million beef cattle. Less than 1% of this
+            population is managed commercially, while about 99% is managed
+            traditionally Cattle singly contribute about 12.7% of the
+            agricultural Gross Domestic Product (GDP) in Nigeria (CBN, 1999).
+            The cattle industry provides a means of livelihood for a significant
+            proportion of pastoral households and participants in the cattle
+            value chain in the sub-humid and semi-arid ecological zones of
+            Nigeria... <span><a href="/economic">Read more</a></span>
+          </p>
+        </div>
+        <div class="cultural">
+          <div class="cul-1">
+            <h3>Cultural</h3>
+            <p>
+              Other cultural and economic contributions of cattle include the
+              prestige inherent in their ownership and their place in custom,
+              religion and festive occasions. Recently, cattle have been used as
+              experimental animals such that much of what is known today about
+              milk fat synthesis and the physiological mechanism that is
+              involved, relate to the ruminant on account of its convenience in
+              research. Cattle, also, assist in the economic utilization of
+              non-marketable crop resources, adding to them. These animals are
+              able to survive on fallow lands and others that are not good for
+              arable crop farming, thereby maximizing the use of the available
+              land resource...
+              <span><a href="/cultural">Read more</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <div class="f-1">
+          <h2>Contact Us</h2>
+          <p>Phone: +234 906 070 4863</p>
+          <p>Mail: ruruwhygee@gmail.com</p>
+          <p>Address: 41 Jabi Road,Kaduna Nigeria</p>
+          <div class="f-1-1">
+            <div>
+              <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div>
+              <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="f-2">
+          <h2>Follow Us</h2>
+          <div>
+            <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          <div>
+            <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          <i class="bx bxs-copyright"></i>2024 <span>Gudali</span>, All Rights
+          Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/breeds.js"></script>
+  </body>
+</html>

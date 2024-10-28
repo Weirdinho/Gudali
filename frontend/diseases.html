@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cow Diseases</title>
+    <link rel="stylesheet" href="css/diseases.css" />
+    <link rel="icon" href="icon/gudali-icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background-1">
+        <header>
+          <div class="left">
+            <div><img src="icon/gudali-icon.png" alt="" /></div>
+          </div>
+          <div class="message-mid"><p id="welcome-message"></p></div>
+          <div class="mid" id="myDiv">
+            <div id="welcome_tag"></div>
+            <div class="head-3">
+              <div class="right" onclick="menu()">
+                <i class="bx bx-expand"></i>
+              </div>
+            </div>
+    
+            <a href="/">Home</a>
+            <a href="/courses">Courses</a>
+            <a href="/cart">Cart</a>
+    
+            <!-- Cart counter -->
+    
+            <!-- Placeholder for welcome message -->
+            <a id="login-link" href="/login" class="button" onclick="saveLastPage()"
+              >SignIn/Up</a
+            >
+    
+            <a
+              id="logout-link"
+              class="button"
+              style="display: none"
+              href="/"
+              onclick="logout()"
+              >Logout</a
+            >
+    
+            <!-- <li id="welcome-message" style="color: saddlebrown;"></li> -->
+            <!-- Logout link -->
+          </div>
+    
+          <div class="right" onclick="menu()">
+            <i class="bx bx-menu"></i>
+          </div>
+        </header>
+        <div class="body-0"></div>
+        <i class="bx bx-chevron-up-circle scroll-up-btn"></i>
+
+        <div class="section-introduction">
+          <h1>Cow Diseases</h1>
+          <h2>Introduction</h2>
+          <p>
+            Cows can be affected by several diseases, which can impact their
+            health, productivity, and the safety of milk and meat products.
+            Click on any disease to learn about its symptoms, causes, and
+            prevention measures. Farmers and veterinarians should be aware of
+            these diseases to ensure proper cow health and minimize risks.
+          </p>
+          <h2 class="com">Common Diseases</h2>
+        </div>
+
+        <div class="section">
+          <div class="disease-list">
+            <div class="disease-item" onclick="toggleDetail(this)">
+              <h3>Mastitis</h3>
+              <div class="disease-detail">
+                <strong>Symptoms:</strong> Swelling, redness of udder, reduced
+                milk production.<br />
+                <strong>Causes:</strong> Bacterial infection due to poor
+                hygiene.<br />
+                <strong>Prevention:</strong> Proper milking practices,
+                maintaining hygiene.
+              </div>
+            </div>
+            <div class="disease-item" onclick="toggleDetail(this)">
+              <h3>Foot and Mouth Disease (FMD)</h3>
+              <div class="disease-detail">
+                <strong>Symptoms:</strong> Fever, blisters in mouth and feet,
+                drooling.<br />
+                <strong>Causes:</strong> Viral infection through contact with
+                infected animals.<br />
+                <strong>Prevention:</strong> Vaccination, isolating infected
+                animals.
+              </div>
+            </div>
+            <div class="disease-item" onclick="toggleDetail(this)">
+              <h3>Bovine Respiratory Disease (BRD)</h3>
+              <div class="disease-detail">
+                <strong>Symptoms:</strong> Coughing, nasal discharge, difficulty
+                breathing.<br />
+                <strong>Causes:</strong> Viral or bacterial infections, stress
+                factors like transport.<br />
+                <strong>Prevention:</strong> Reduce stress, vaccination, good
+                ventilation.
+              </div>
+            </div>
+            <div class="disease-item" onclick="toggleDetail(this)">
+              <h3>Bovine Tuberculosis</h3>
+              <div class="disease-detail">
+                <strong>Symptoms:</strong> Weight loss, persistent cough,
+                lethargy and swollen lumph nodes.<br />
+                <strong>Causes:</strong>Inadequate hygiene, poor ventilation,
+                ingestion, contaminated environments<br />
+                <strong>Prevention:</strong>Vaccination, strict biosecurity
+                protocols and avoiding contact with infected animals
+              </div>
+            </div>
+            <div class="disease-item" onclick="toggleDetail(this)">
+              <h3>White Muscles Disease</h3>
+              <div class="disease-detail">
+                <strong>Symptoms:</strong> Coughing, nasal discharge, fever,
+                lethargy and rapid breathing.<br />
+                <strong>Causes:</strong> Combination of viral infections (like
+                BRSV) and bacterial infections often exacerbated by stress.<br />
+                <strong>Prevention:</strong> Good management practices, reducing
+                stress, vaccination and p.roper nutrition
+              </div>
+            </div>
+            <div class="disease-item" onclick="toggleDetail(this)">
+              <h3>Johne's Disease</h3>
+              <div class="disease-detail">
+                <strong>Symptoms:</strong> Chronic diarrhea, weight loss and
+                decreased milk production.<br />
+                <strong>Causes:</strong> Virus that spreads through direct
+                contact, contaminated feeds or equipments<br />
+                <strong>Prevention:</strong> Vaccination,strict biosecurity
+                protocols, and avoiding contact with infected animals
+              </div>
+            </div>
+            <div class="disease-item" onclick="toggleDetail(this)">
+              <h3>Bovine Trypanosomiasis (Sleeping Sickness)</h3>
+              <div class="disease-detail">
+                <strong>Symptoms:</strong> Fever, anemia, weight loss, lethargy,
+                loss of appetite.<br />
+                <strong>Causes:</strong>A parasite "Trypanosoma" from the bite
+                of tsetse fly (Glossina species).<br />
+                <strong>Prevention:</strong> Tsetse fly control, Regular Use of
+                Trypanocides, Breeding of Trypanotolerant Cattle, Good Herd
+                Management.
+              </div>
+            </div>
+            <div class="disease-item" onclick="toggleDetail(this)">
+              <h3>Rinderpest</h3>
+              <div class="disease-detail">
+                <strong>Symptoms:</strong> Chronic diarrhea, high fever, nasal
+                and eye discharge, constipation, rapid loss of weight.<br />
+                <strong>Causes:</strong> Rinderpest was caused by the Rinderpest
+                virus, a member of the Morbillivirus genus in the
+                Paramyxoviridae family.<br />
+                <strong>Prevention:</strong> Vaccination, quarantine and
+                isolation, monitoring, hygiene, awareness trainings.
+              </div>
+            </div>
+            <div class="disease-item" onclick="toggleDetail(this)">
+              <h3>Helminthiasis (Worm Infections)</h3>
+              <div class="disease-detail">
+                <strong>Symptoms:</strong> Weight loss, poor growth, swollen
+                jaw, coughing, anemia.<br />
+                <strong>Causes:</strong> Helminthiasis in cattle is caused by
+                parasitic worms, also known as helminths, which infest various
+                parts of the animal's body<br />
+                <strong>Prevention:</strong> Anthelmintic treatment, pasture
+                management, hygiene, nutrition, monitoring.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-2">
+        <h1>Symptoms to Watch For</h1>
+        <p>
+          Early detection of cow diseases can prevent more serious health
+          issues. Here are some symptoms that may indicate a disease:
+        </p>
+        <ul>
+          <li><strong>1. </strong>Sudden drop in milk production</li>
+          <li><strong>2. </strong>Changes in eating or drinking habits</li>
+          <li>
+            <strong>3. </strong>Respiratory distress such as coughing or labored
+            breathing
+          </li>
+          <li>
+            <strong>4. </strong>Swelling, redness, or unusual heat in specific
+            body parts
+          </li>
+          <li>
+            <strong>5. </strong>Unusual discharge from eyes, nose, or udder
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-2">
+        <h1>Causes and Risk Factors</h1>
+        <p>Cows may develop diseases due to various factors, including:</p>
+        <ul>
+          <li>
+            <strong>1. </strong>Poor hygiene conditions in barns or milking
+            stations
+          </li>
+          <li>
+            <strong>2. </strong>Exposure to infected animals or contaminated
+            environments
+          </li>
+          <li>
+            <strong>3. </strong>Stress from overcrowding, poor nutrition, or
+            transportation
+          </li>
+          <li>
+            <strong>4. </strong>Lack of vaccination or improper veterinary care
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-2">
+        <h1>Prevention and Treatment</h1>
+        <p>
+          Effective prevention and treatment methods are crucial for managing
+          cow diseases:
+        </p>
+        <ul>
+          <li>
+            <strong>1. </strong>Regular vaccination and veterinary checkups
+          </li>
+          <li>
+            <strong>2. </strong>Maintaining proper hygiene in barns and milking
+            stations
+          </li>
+          <li>
+            <strong>3. </strong>Isolating infected animals to prevent the spread
+            of disease
+          </li>
+          <li>
+            <strong>4. </strong>Providing proper nutrition and minimizing stress
+          </li>
+          <li>
+            <strong>5. </strong>Early diagnosis and treatment with appropriate
+            medication
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div class="foot">
+        <div class="f-1">
+          <h2>Contact Us</h2>
+          <p>Phone: +234 906 070 4863</p>
+          <p>Mail: ruruwhygee@gmail.com</p>
+          <p>Address: 41 Jabi Road,Kaduna Nigeria</p>
+          <div class="f-1-1">
+            <div>
+              <a href="https://twitter.com/umargusau_"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/umargusau_/"
+                ><i class="bx bxl-instagram-alt"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/umar-gusau-983900308"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.snapchat.com/add/umar_gusau"
+                ><i class="bx bxl-snapchat"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="f-2">
+          <h2>Follow Us</h2>
+          <div>
+            <a href="https://twitter.com/umargusau_"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/umargusau_/"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/umar-gusau-983900308"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.snapchat.com/add/umar_gusau"
+              ><i class="bx bxl-snapchat"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          <i class="bx bxs-copyright"></i>2024 <span>Gudali</span>, All Rights
+          Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/landing-page.js"></script>
+  </body>
+</html>

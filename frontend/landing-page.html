@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gudali</title>
+    <link rel="stylesheet" href="css/landing-page.css" />
+    <link rel="icon" href="icon/gudali-icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background"></div>
+    <header>
+      <div class="left">
+        <div><img src="icon/gudali-icon.png" alt="" /></div>
+      </div>
+      <div class="message-mid"><p id="welcome-message"></p></div>
+      <div class="mid" id="myDiv">
+        <div id="welcome_tag"></div>
+        <div class="head-3">
+          <div class="right" onclick="menu()">
+            <i class="bx bx-expand"></i>
+          </div>
+        </div>
+
+        <a href="/">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/cart">Cart</a>
+
+        <!-- Cart counter -->
+
+        <!-- Placeholder for welcome message -->
+        <a id="login-link" href="/login" class="button" onclick="saveLastPage()"
+        >SignIn/Up</a
+      >
+
+        <a
+          id="logout-link"
+          class="button"
+          style="display: none"
+          href="/"
+          onclick="logout()"
+          >Logout</a
+        >
+
+        <!-- <li id="welcome-message" style="color: saddlebrown;"></li> -->
+        <!-- Logout link -->
+      </div>
+
+      <div class="right" onclick="menu()">
+        <i class="bx bx-menu"></i> 
+      </div>
+    </header>
+    <i class="bx bx-chevron-up-circle scroll-up-btn"></i>
+
+    <div class="body-0"></div>
+
+    <div class="body-1">
+      <div class="body-1-top">
+        <div class="body-1-top-header">
+          <h1>Welcome to <span>GUDALI</span></h1>
+          <h3>
+            Where you can find the you information you need about cattle in
+            Nigeria
+          </h3>
+        </div>
+        <div class="body-1-top-p">
+          <p>
+            At <span>GUDALI</span>, we are dedicated to support and empower
+            Cattle Herders and Ranchers with the resources and information they
+            need to thrive
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="body-2">
+      <div class="body-2-left">
+        <h1>OUR MISSION</h1>
+        <p>
+          To provide a platform that connects Farmers, Markets, and Consumers
+          with quality agricltural products and services
+        </p>
+      </div>
+      <div class="body-2-left">
+        <h1>OUR VISION</h1>
+        <p>
+          To revolutionize livestock farming through
+          innovation, education, and community support, ensuring a prosperous
+          future for farmers and their livestock
+        </p>
+      </div>
+    </div>
+    <!-- <div class="message"><i class="bx bxs-message-rounded-detail"></i></div> -->
+    <div class="body-3">
+      <div class="body-3-top">
+        <div class="breed">
+          <img src="icon/cow-walpaper-aerial.jpg" alt="" />
+        </div>
+        <div class="breed-writeup">
+          <h2>Breeds & Productivity</h2>
+          <p>
+            Nigeria is home to several indegenous breeds of cattle, each with
+            unique characteristics suited to various ecological zones and uses
+          </p>
+          <a href="/breeds"> <button>TAKE ME THERE</button></a>
+        </div>
+      </div>
+      <div class="body-3-top">
+        <div class="breed"><img src="icon/cow-products.webp" alt="" /></div>
+        <div class="breed-writeup">
+          <h2>Products</h2>
+          <p>
+            Cattle provide a variety of products that are essential to human
+            nutrition, agriculture and industry
+          </p>
+          <a href="/products"><button>TAKE ME THERE</button>
+           </a
+          >
+        </div>
+      </div>
+      <div class="body-3-top">
+        <div class="breed">
+          <img src="icon/different-breeds-(2).jpg" alt="" />
+        </div>
+        <div class="breed-writeup">
+          <h2>Diseases</h2>
+          <p>
+            Cattle are vulnerable to several diseases that affect their
+            health, productivity, and the economy of livestock farming.
+          </p>
+          <a href="/diseases"><button>TAKE ME THERE</button>
+           </a
+          >
+        </div>
+      </div>
+      <div class="body-3-top">
+        <div class="breed"><img src="icon/brown-calf.jpg" alt="" /></div>
+        <div class="breed-writeup">
+          <h2>Course Catalogue</h2>
+          <p>
+            Comprehensive understanding of modern cow farming practices,
+            helping individuals grow in the industry while promoting
+            sustainability and efficiency.
+          </p>
+          <a href="/courses"><button>TAKE ME THERE</button>
+           </a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <div class="f-1">
+          <h2>Contact Us</h2>
+          <p>Phone: +234 906 070 4863</p>
+          <p>Mail: ruruwhygee@gmail.com</p>
+          <p>Address: 41 Jabi Road,Kaduna Nigeria</p>
+          <div class="f-1-1">
+            <div>
+              <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div>
+              <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="f-2">
+          <h2>Follow Us</h2>
+          <div>
+            <a href="https://twitter.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/umargusau_/"><i class="bx bxl-instagram-alt"></i></a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/umar-gusau-983900308"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          <div>
+            <a href="https://www.snapchat.com/add/umar_gusau"><i class="bx bxl-snapchat"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          <i class="bx bxs-copyright"></i>2024 <span>Gudali</span>, All Rights
+          Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/landing-page.js"></script>
+  </body>
+</html>

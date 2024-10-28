@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+  
+}
+body{
+  background-color: white;
+}
+.background {
+  background-image: url(/icon/greenfield-cows.jpg);
+  filter: brightness(50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  margin-top: -100px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 2%; */
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  /* background-color: white; */
+  z-index: 9;
+  /* box-shadow: 1px 2px 2px 0px gray; */
+}
+.button {
+  width: 150px;
+  height: 50px;
+  background-color: sandybrown; /* A color that complements saddlebrown */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: brown; 
+}
+
+
+/* Optional: add some spacing between buttons */
+#login-link, #register-link {
+  margin: 0 10px;
+}
+#logout-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headdd {
+  background-color: white;
+}
+.left img {
+  height: 50px;
+  border-radius: 10px;
+}
+.left {
+  margin: 1%;
+}
+.message-mid{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#welcome-message{
+  font-weight: bold;
+  font-size: 20px;
+}
+.mid {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ margin-right: 2%;
+}
+.mid a {
+  text-decoration: none;
+  color: white;
+}
+
+.bx.bx-expand {
+  font-size: 30px;
+}
+.bx-menu{
+  font-size: 30px;
+}
+.body-0 {
+  height: 70px;
+}
+
+.scroll-up-btn {
+  background-color: sandybrown;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  font-size: 45px;
+  cursor: pointer;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 0; 
+  visibility: hidden;
+  pointer-events: none; 
+  z-index: 9999;
+}
+
+
+
+.fixed {
+  animation: color 0.8s forwards ease-in;
+}
+.fixed a {
+  animation: color;
+  color: white;
+}
+
+@keyframes color {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: saddlebrown;
+    color: white;
+
+  }
+}
+
+.body-1 {
+  /* margin-top: 50px; */
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 500px;
+  position: absolute;
+  top: 70px;
+}
+.body-1-top {
+  width: 40%;
+  /* background-color: rgba(1, 21, 4, 0.6); */
+  border-radius: 7px;
+}
+
+.body-1 span {
+  color: saddlebrown;
+}
+.body-1-top h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  color: white;
+}
+.body-1-top h1 {
+  font-size: 50px;
+  color: white;
+}
+.body-1-top p {
+  margin-top: 50px;
+  color: white;
+  font-size: 20px;
+ 
+}
+.message {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: saddlebrown;
+  position: fixed;
+  border-radius: 50% 10% 50% 50%;
+  bottom: 10px;
+  right: 10px;
+}
+.bx-menu {
+  font-size: 40px;
+  /* color: white; */
+  margin: 15px 15px 0px 0px;
+  cursor: pointer;
+}
+.body-2 {
+  display: flex;
+  justify-content: space-around;
+margin-bottom: 100px;
+}
+.body-2-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  /* background-color: rgba(1, 21, 4, 0.6); */
+  border-radius: 7px;
+}
+.body-2-left p {
+  font-size: larger;
+  font-weight: bolder;
+  color: black;
+}
+.body-2-left h1 {
+  color: rgb(212, 104, 26);
+  /* background-color: black; */
+}
+.bxs-circle {
+  color: white;
+}
+.body-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates responsive columns */
+  gap: 20px; /* Spacing between grid items */
+  text-align: center;
+  padding: 2%;
+  justify-content: space-between;
+  color: white;
+}
+
+.body-3-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  border-radius: 10px;
+  padding-top: 10px; 
+  background-color: rgba(139, 69, 19, 0.8);
+  position: relative;
+ 
+}
+.body-3-top button{
+  width: 125px;
+  height: 50px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+ bottom: 0;
+ margin-bottom: 10px;
+ border: none;
+ border-radius: 15px;
+ background-color: sandybrown;
+ color: white;
+ 
+}
+.body-3-top button:hover{
+  background-color: brown;
+}
+.body-3-top:hover {
+  box-shadow: 1px 4px 4px 1px rgb(198, 197, 197);
+}
+.breed img {
+  height: 160px;
+  width: 250px;
+  object-fit: cover;
+  border-radius:10px 10px 10px 10px ;
+}
+.breed-writeup {
+  height: 160px;
+  padding-top: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.breed-writeup h2 {
+  margin-bottom: 10px;
+}
+.breed-writeup a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 6%;
+}
+.foot h2 {
+  color: saddlebrown;
+  font-size: 25px;
+}
+.f-1 {
+  line-height: 50px;
+  font-size: 18px;
+}
+.f-1-1 {
+  display: none;
+  
+}
+.f-1-1 a{
+  font-size: 30px;
+  color: black;
+}
+.f-1-1 a:hover{
+  color: saddlebrown;
+}
+.f-2 {
+  /* text-align: center; */
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.f-2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+.f-2 a:hover {
+  color: saddlebrown;
+}
+.f-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom {
+  text-align: center;
+  color: black;
+  padding: 3px;
+}
+.bxs-copyright {
+  color: saddlebrown;
+}
+.bottom span {
+  color: saddlebrown; 
+}
+
+@media (min-width: 1100px) {
+  .right {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .mid {
+    display: none;
+    padding: 0px 50px 30px; 
+    height: 100vh;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    width: 35%;
+    background-color: saddlebrown;
+    font-size: 20px;
+    gap: 20px;
+  }
+  .mid a {
+    color: black;
+  }
+  .head-3 {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: right;
+  }
+  .button{
+    width: 100px;
+  }
+
+}
+@media (max-width: 800px) {
+  .scroll-up-btn.visible {
+    visibility: visible;
+    pointer-events: auto; 
+  }
+  
+  
+  .scroll-up-btn {
+    opacity: 0.6;
+  }
+  
+  .scroll-up-btn:hover {
+    opacity: 1;
+  }
+  
+  .body-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .body-1-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+  }
+  .body-1-top-p {
+    width: 80%;
+  }
+  .body-1-top-header {
+    width: 80%;
+  }
+  .body-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .background {
+    height: 1000px;
+  }
+  .body-2-left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .f-1-1{
+    display: flex;
+  justify-content: space-around;
+}
+  .f-2 {
+    display: none;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}

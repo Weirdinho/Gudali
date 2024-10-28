@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalogue</title> 
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="icon" href="icon/gudali-icon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+
+    <main class="course-main">
+      <header>
+        <div class="left">
+          <div><img src="icon/gudali-icon.png" alt="" /></div>
+        </div>
+        <div class="message-mid"><p id="welcome-message"></p></div>
+        <div class="mid" id="myDiv">
+          <div id="welcome_tag"></div>
+          <div class="head-3">
+            <div class="right" onclick="menu()">
+              <i class="bx bx-expand"></i>
+            </div>
+          </div>
+  
+          <a href="/">Home</a>
+          <a href="/courses">Courses</a>
+          <a href="/cart">Cart (<span id="cart-counter">0</span>)</a>
+  
+          <!-- Cart counter -->
+  
+          <!-- Placeholder for welcome message -->
+          <a id="login-link" href="/login" class="button" onclick="saveLastPage()"
+            >SignIn/Up</a
+          >
+  
+          <a
+            id="logout-link"
+            class="button"
+            style="display: none"
+            href="/"
+            onclick="logout()"
+            >Logout</a
+          >
+  
+          <!-- <li id="welcome-message" style="color: saddlebrown;"></li> -->
+          <!-- Logout link -->
+        </div>
+  
+        <div class="right" onclick="menu()">
+          <i class="bx bx-menu"></i>
+        </div>
+      </header>
+      
+      <div class="body-0"></div> 
+      <i class="bx bx-chevron-up-circle scroll-up-btn"></i>
+
+        <h1>COURSE CATALOGUE</h1>
+       
+        <div id="course-list">
+          <div id="notification" class="hidden"></div>
+        </div> <!-- Empty container for dynamic courses -->
+
+     <div class="check-btn"> <a href="/cart">Proceed to Checkout</a></div>
+    </main>
+
+    <footer>
+      <div class="foot">
+        <div class="f-1">
+          <h2>Contact Us</h2> 
+          <p>Phone: +234 906 070 4863</p>
+          <p>Mail: ruruwhygee@gmail.com</p>
+          <p>Address: 41 Jabi Road,Kaduna Nigeria</p>
+          <div class="f-1-1">
+            <div>
+              <a href="x.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div>
+              <a href="#"><i class="bx bxl-snapchat"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="f-2">
+          <h2>Quick Links</h2>
+          <div>
+            <a href="x.com/umargusau_"><i class="bx bxl-twitter"></i></a>
+          </div>
+          <div>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+          </div>
+          <div>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          <div>
+            <a href="#"><i class="bx bxl-snapchat"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          <i class="bx bxs-copyright"></i>2024 <span>Gudali</span>, All Rights
+          Reserved
+        </p>
+      </div>
+    </footer>
+
+    
+    <script src="js/course.js"></script>
+</body>
+</html>
