@@ -410,6 +410,7 @@ button {
     right: 0; 
     margin: 0;
     width: 35%;
+    padding-bottom: 30%;
     background-color: saddlebrown;
     font-size: 20px;
     gap: 20px;

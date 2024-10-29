@@ -301,7 +301,7 @@ img{
     padding: 0px 50px; 
     height: 100vh;
     flex-direction: column;
-    justify-content: space-evenly;
+ padding-bottom: 30%;
     position: absolute; 
     right: 0;
     margin: 0;
