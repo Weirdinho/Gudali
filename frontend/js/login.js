@@ -11,9 +11,7 @@ function menu() {
 // Function to save the last visited page before navigating away
 function saveLastPage() {
   localStorage.setItem("lastPage", window.location.href);
-}
-
-console.log(PORT);
+} 
 
 document.getElementById("submit1")?.addEventListener("click", async (e) => {
   e.preventDefault();
@@ -21,7 +19,7 @@ document.getElementById("submit1")?.addEventListener("click", async (e) => {
   const name = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  const response = await fetch(`http://localhost:${PORT}/api/users/login`, {
+  const response = await fetch(`/api/users/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -48,7 +46,7 @@ document.getElementById("submit2")?.addEventListener("click", async (e) => {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password2").value;
 
-  const response = await fetch("http://localhost:3000/api/users/register", {
+  const response = await fetch("/api/users/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, email, password }),

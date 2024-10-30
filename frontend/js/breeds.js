@@ -1,7 +1,7 @@
 let head = document.querySelector("header");
 let up = document.querySelector(".up");
 let message = document.querySelector(".message-mid");
-const PORT = process.env.PORT || 3000;
+
 window.addEventListener("scroll", function () {
   if (window.scrollY > 80) {
     head.classList.add("fixed");
@@ -42,7 +42,7 @@ function menu() {
 
 async function getBreeds() {
   try {
-    const res = await fetch(`http://localhost:${PORT}/api/breeds/all-breeds`);
+    const res = await fetch("/api/breeds/all-breeds");
     const breeds = await res.json();
     if (res.ok) return breeds;
   } catch (error) {
@@ -58,7 +58,7 @@ function saveLastPage() {
 document.addEventListener("DOMContentLoaded", () => {
   async function displayBreeds() {
     try {
-      const res = await fetch("http://localhost:3000/api/breeds/all-breeds");
+      const res = await fetch("/api/breeds/all-breeds");
       const breeds = await res.json();
       console.log(breeds);
 
