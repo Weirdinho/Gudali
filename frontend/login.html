@@ -53,11 +53,12 @@
 
     <div class="body-0"></div>
 
+  
 
     <div class="container">
       <!-- Add this placeholder element where the message will appear -->
 <div id="notification"></div>
-
+<div id="message" style="display: none; color: green;"></div>
       <input type="checkbox" id="flip" />
       <div class="cover">
         <div class="front">
@@ -108,7 +109,7 @@
 
                 <div class="text" id="forgotPassword"><a href="#">Forgot password?</a></div>
               
-                <!--  -->
+            
                 <div class="button input-box">
                   <input type="submit" value="Login" id="submit1" />
                 </div>
@@ -123,8 +124,8 @@
             <div class="modal-content">
               <span class="close">&times;</span>
               <h2>Forgot Password</h2>
-              <p>Enter your email address, and we'll send your password.</p>
-              <input type="email" id="emailInput" placeholder="Enter your email" required />
+              <p>Enter your email, and get your password.</p>
+              <input  type="email" id="emailInput" placeholder="Enter your email" required />
               <button id="sendEmailButton">Send Email</button>
             </div>
           </div>

@@ -63,7 +63,8 @@ header {
   background-color: white;
 }
 .left img {
-  height: 60px;
+  height: 50px;
+  border-radius: 10px;
 }
 .left {
   margin: 1%;
@@ -163,10 +164,12 @@ button {
   /* color: white; */
   margin: 15px 15px 0px 0px;
   cursor: pointer;
+  color:white;
 }
 .bx-expand {
   font-size: 40px;
   cursor: pointer;
+  color:white;
 }
 #notification {
   display: none; 
@@ -405,23 +408,49 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow-y: none;
   background-color: rgba(0, 0, 0, 0.4);
+  z-index:999999999;
+  
 }
+.modal input{
+  height:30px;
+  border: 1px solid black;
+  margin-top: 10px;
+  border-radius:7px;
 
+}
+.modal input::placeholder{
+  color:sandybrown;
+}
+.modal p{
+  margin-top:10px;
+}
+.modal button{
+  margin-top: 10px;
+  background: saddlebrown;
+  padding:4%;
+  border-radius: 15px;
+  color:white;
+}
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  height: 55%;
   max-width: 400px;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
 }
 

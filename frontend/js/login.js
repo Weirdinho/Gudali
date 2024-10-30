@@ -63,10 +63,6 @@ document.getElementById("submit2")?.addEventListener("click", async (e) => {
   }
 });
 
-// FORGOT PASSWORD
-
-
-
   // Get modal elements
   const modal = document.getElementById('forgotPasswordModal');
   const closeButton = document.querySelector('.close');
@@ -93,58 +89,44 @@ document.getElementById("submit2")?.addEventListener("click", async (e) => {
   };
 
   // Send email when the "Send Email" button is clicked
-  sendEmailButton.addEventListener('click', function () {
-    const email = emailInput.value;
+const sendMailButton = document.getElementById('sendEmailButton');
+const mailInput = document.getElementById('emailInput');
+const moddal = document.getElementById('modal');
+const messageDiv = document.getElementById('message');
 
-    if (email) {
-      fetch('/forgot-password', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      })
+sendMailButton.addEventListener('click', function () {
+  const email = mailInput.value;
+
+  if (email) {
+    fetch('/forgot-password', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email }),
+    })
       .then(response => response.text())
       .then(data => {
-        alert(data);  // Show success message
+        messageDiv.style.display = 'block';
+        messageDiv.style.color = 'green';  // Success color
+        messageDiv.textContent = data;  // Show success message
         modal.style.display = 'none';  // Close modal
       })
-      .catch(error => console.error('Error:', error));
-    } else {
-      alert('Please enter a valid email address.');
-    }
-  });
-
-
-
-// document
-//   .getElementById("forgotPassword")
-//   .addEventListener("click", function (e) {
-//     e.preventDefault();
-
-//     const email = prompt("Please enter your email:");
-
-//     if (email) {
-//       fetch("/forgot-password", {
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify({ email }),
-//       })
-//         .then((response) => response.text())
-//         .then((data) => {
-//           // Show the message in the notification div
-//           showNotification(data, "success");
-//         })
-//         .catch((error) => {
-//           // Show an error message in case of failure
-//           showNotification("Error: " + error.message, "error");
-//         });
-//     }
-//   });
-
-
+      .catch(error => {
+        messageDiv.style.display = 'block';
+        messageDiv.style.color = 'red';  // Error color
+        messageDiv.textContent = 'An error occurred. Please try again.';
+        console.error('Error:', error);
+      });
+  } else {
+    messageDiv.style.display = 'block';
+    messageDiv.style.color = 'red';
+    messageDiv.textContent = 'Please enter a valid email address.';
+  }
+  setTimeout(() => {
+    messageDiv.style.display = 'none';
+  }, 5000);
+});
 
 // Function to show the notification message
 function showNotification(message, type) {
