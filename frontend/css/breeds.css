@@ -423,7 +423,7 @@ header {
     display: flex;
     flex-direction: column;
     margin: auto;
-  
+    box-shadow: 1px 4px 4px 1px rgb(180, 179, 179);
   }
   .background {
     height: 1000px;

@@ -106,7 +106,17 @@
                   />
                 </div>
 
-                <div class="text" id="forgotPassword"><a href="#">Forgot password?</a></div>
+                <!-- <div class="text" id="forgotPassword"><a href="#">Forgot password?</a></div> -->
+                <div id="forgotPasswordModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Forgot Password</h2>
+                    <p>Enter your email address, and we'll send your password.</p>
+                    <input type="email" id="emailInput" placeholder="Enter your email" required />
+                    <button id="sendEmailButton">Send Email</button>
+                  </div>
+                </div>
+                <!--  -->
                 <div class="button input-box">
                   <input type="submit" value="Login" id="submit1" />
                 </div>

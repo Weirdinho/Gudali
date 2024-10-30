@@ -65,32 +65,85 @@ document.getElementById("submit2")?.addEventListener("click", async (e) => {
 
 // FORGOT PASSWORD
 
-document
-  .getElementById("forgotPassword")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
 
-    const email = prompt("Please enter your email:");
+
+  // Get modal elements
+  const modal = document.getElementById('forgotPasswordModal');
+  const closeButton = document.querySelector('.close');
+  const sendEmailButton = document.getElementById('sendEmailButton');
+  const emailInput = document.getElementById('emailInput');
+
+  // Open the modal when the "Forgot password?" link is clicked
+  document.getElementById('forgotPassword').addEventListener('click', function (e) {
+    e.preventDefault();
+    modal.style.display = 'block';
+  });
+
+  // Close the modal when the close button is clicked
+  closeButton.onclick = function () {
+    modal.style.display = 'none';
+  };
+
+  // Close the modal if the user clicks outside of it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  };
+
+  // Send email when the "Send Email" button is clicked
+  sendEmailButton.addEventListener('click', function () {
+    const email = emailInput.value;
 
     if (email) {
-      fetch("/forgot-password", {
-        method: "POST",
+      fetch('/forgot-password', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email }),
       })
-        .then((response) => response.text())
-        .then((data) => {
-          // Show the message in the notification div
-          showNotification(data, "success");
-        })
-        .catch((error) => {
-          // Show an error message in case of failure
-          showNotification("Error: " + error.message, "error");
-        });
+      .then(response => response.text())
+      .then(data => {
+        alert(data);  // Show success message
+        modal.style.display = 'none';  // Close modal
+      })
+      .catch(error => console.error('Error:', error));
+    } else {
+      alert('Please enter a valid email address.');
     }
   });
+
+
+
+// document
+//   .getElementById("forgotPassword")
+//   .addEventListener("click", function (e) {
+//     e.preventDefault();
+
+//     const email = prompt("Please enter your email:");
+
+//     if (email) {
+//       fetch("/forgot-password", {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify({ email }),
+//       })
+//         .then((response) => response.text())
+//         .then((data) => {
+//           // Show the message in the notification div
+//           showNotification(data, "success");
+//         })
+//         .catch((error) => {
+//           // Show an error message in case of failure
+//           showNotification("Error: " + error.message, "error");
+//         });
+//     }
+//   });
+
+
 
 // Function to show the notification message
 function showNotification(message, type) {
