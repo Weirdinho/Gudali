@@ -1,17 +1,16 @@
 let head = document.querySelector("header");
 let up = document.querySelector(".up");
-let message = document.querySelector(".message-mid")
-
+let message = document.querySelector(".message-mid");
+const PORT = process.env.PORT || 3000;
 window.addEventListener("scroll", function () {
   if (window.scrollY > 80) {
     head.classList.add("fixed");
-  } else {  
+  } else {
     head.classList.remove("fixed");
   }
 });
 document.addEventListener("DOMContentLoaded", function () {
   const scrollUpBtn = document.querySelector(".scroll-up-btn");
-
 
   const toggleScrollButton = () => {
     if (window.scrollY > 300) {
@@ -21,9 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-
   window.addEventListener("scroll", toggleScrollButton);
-
 
   scrollUpBtn.addEventListener("click", () => {
     window.scrollTo({
@@ -45,7 +42,7 @@ function menu() {
 
 async function getBreeds() {
   try {
-    const res = await fetch("http://localhost:3000/api/breeds/all-breeds");
+    const res = await fetch(`http://localhost:${PORT}/api/breeds/all-breeds`);
     const breeds = await res.json();
     if (res.ok) return breeds;
   } catch (error) {
@@ -55,9 +52,8 @@ async function getBreeds() {
 
 // Function to save the last visited page before navigating away
 function saveLastPage() {
-  localStorage.setItem('lastPage', window.location.href);
+  localStorage.setItem("lastPage", window.location.href);
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   async function displayBreeds() {
@@ -67,11 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(breeds);
 
       breeds.data.forEach((breeds) => {
-        const body2 = document.getElementById("body-2")
+        const body2 = document.getElementById("body-2");
         const breedCard = document.createElement("div");
         const writeup = document.createElement("div");
         const lefty = document.createElement("div");
-        lefty.classList.add("b-2-1")
+        lefty.classList.add("b-2-1");
         breedCard.classList.add("b-2-1-left");
         writeup.classList.add("writeup");
 
@@ -85,17 +81,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         lefty.appendChild(breedCard);
         breedCard.appendChild(writeup);
-        body2.appendChild(breedCard)
+        body2.appendChild(breedCard);
       });
     } catch (error) {
       console.error(error);
     }
-  
-   
   }
   displayBreeds();
 });
-
 
 document.getElementById("login-form")?.addEventListener("submit", async (e) => {
   e.preventDefault(); // Prevent form submission
@@ -118,11 +111,10 @@ document.getElementById("login-form")?.addEventListener("submit", async (e) => {
   if (response.ok) {
     // Successful login
     localStorage.setItem("username", name);
-      // Redirect to last visited page or fallback to /courses
-      const lastPage = localStorage.getItem("lastPage") || "/courses";
-      window.location = lastPage;
+    // Redirect to last visited page or fallback to /courses
+    const lastPage = localStorage.getItem("lastPage") || "/courses";
+    window.location = lastPage;
     updateUI();
-  
   } else {
     alert(data.message);
   }
