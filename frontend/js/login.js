@@ -1,4 +1,4 @@
-const PORT = process.env.PORT || 3000;
+
 function menu() {
   var x = document.getElementById("myDiv");
   if (x.style.display === "none") {
