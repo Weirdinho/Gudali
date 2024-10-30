@@ -180,10 +180,10 @@ header {
   color: white;
 }
 .writeup a {
-  color: black;
+  color: blue;
 }
 .writeup a:hover {
-  color: blue;
+  color: blueviolet;
 }
 .body-3 {
   padding: 2%;
