@@ -39,7 +39,7 @@ conn.once('open', () => {
   gfs.collection('pdfs'); 
 });
 
-
+const PORT = process.env.PORT || 3000;
 // Function to send an email
 let transporter = nodemailer.createTransport({
   service: "gmail",
@@ -212,6 +212,7 @@ app.get("/sokoto-gudali", (req, res) => {
 app.get("/wadara", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/wadara.html"));
 });
-app.listen(3000, () => {
-  console.log("Server running on http://localhost:3000");
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
 });
