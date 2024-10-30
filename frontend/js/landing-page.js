@@ -81,7 +81,7 @@ document
     const password = document.getElementById("password").value;
 
     const response = await fetch(
-      "http://localhost:3000/api/users/login",
+      "/api/users/login",
       {
         method: "POST",
         headers: {

@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
   } else {
     head.classList.remove("fixed");
   }
-});
+}); 
 document.addEventListener("DOMContentLoaded", function () {
   const scrollUpBtn = document.querySelector(".scroll-up-btn");
 
@@ -46,7 +46,7 @@ function menu() {
 
 async function getCourses() {
   try {
-    const res = await fetch("http://localhost:3000/api/courses/all-courses")
+    const res = await fetch("/api/courses/all-courses")
     const courses = await res.json()
     if(res.ok)return courses
   } catch (error) {
@@ -63,7 +63,7 @@ function saveLastPage() {
 document.addEventListener("DOMContentLoaded", () => {
    async function displayCourses() {
     try {
-      const res = await fetch("http://localhost:3000/api/courses/all-courses")
+      const res = await fetch("/api/courses/all-courses")
       const courses = await res.json()
       console.log(courses);
       
@@ -179,7 +179,7 @@ document.getElementById("login-form")?.addEventListener("submit", async (e) => {
     const name = document.getElementById("username").value;
     const password = document.getElementById("password").value;
   
-    const response = await fetch("http://localhost:3000/api/users/login", {
+    const response = await fetch("/api/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
