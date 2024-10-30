@@ -74,7 +74,8 @@ document.getElementById("submit2")?.addEventListener("click", async (e) => {
   const emailInput = document.getElementById('emailInput');
 
   // Open the modal when the "Forgot password?" link is clicked
-  document.getElementById('forgotPassword').addEventListener('click', function (e) {
+  const forgot =  document.getElementById('forgotPassword')
+ forgot.addEventListener('click', function (e) {
     e.preventDefault();
     modal.style.display = 'block';
   });
