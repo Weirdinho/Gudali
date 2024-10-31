@@ -138,9 +138,6 @@ app.post("/forgot-password", async (req, res) => {
   }
 });
 
-if(path==="/testing"){
-  return"testing route"
-}
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/landing-page.html"));

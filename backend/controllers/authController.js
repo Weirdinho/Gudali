@@ -33,7 +33,7 @@ exports.loginUser = async (req, res) => {
         }
 
         if (password !== user.password) { 
-            return res.status(400).json({ msg: 'Invalid credentials' });
+            return res.status(400).json({ msg: 'Invalid Password' });
         }
 
         const payload = { userId: user.id };

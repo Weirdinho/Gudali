@@ -32,12 +32,26 @@ document.getElementById("submit1")?.addEventListener("click", async (e) => {
   if (response.ok) {
     localStorage.setItem("username", name);
     const lastPage = localStorage.getItem("lastPage") || "/courses";
-    window.location = lastPage;
-    updateUI();
+    showMessage("Login successful! Redirecting...", "green");
+    setTimeout(() => {
+      window.location = lastPage;
+    }, 3000);
   } else {
-    alert(data.message);
-  }
+    showMessage(data.message || "An error occurred. Please try again.", "red");
+  } 
 });
+
+function showMessage(message, color) {
+  const messageDiv = document.getElementById("message");
+  messageDiv.style.display = "block";
+  messageDiv.style.color = color;
+  messageDiv.textContent = message;
+
+  // Hide the message after 5 seconds
+  setTimeout(() => {
+    messageDiv.style.display = "none";
+  }, 5000);
+}
 
 document.getElementById("submit2")?.addEventListener("click", async (e) => {
   e.preventDefault();
@@ -45,23 +59,48 @@ document.getElementById("submit2")?.addEventListener("click", async (e) => {
   const name = document.getElementById("username2").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password2").value;
+  const messageDiv = document.getElementById("message");
 
-  const response = await fetch("/api/users/register", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name, email, password }),
-  });
+  try {
+    const response = await fetch("/api/users/register", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, password }),
+    });
 
-  const data = await response.json();
-  if (response.ok) {
-    localStorage.setItem("username", name);
-    updateUI();
-    const lastPage = localStorage.getItem("lastPage") || "/courses";
-    window.location = lastPage;
-  } else {
-    alert(data.message);
+    const data = await response.json();
+    console.log("Server response:", data);
+
+    if (response.ok) {
+      localStorage.setItem("username", name);
+      updateUI();
+      const lastPage = localStorage.getItem("lastPage") || "/courses";
+      showMessage("Registration successful! Redirecting...", "green");
+      setTimeout(() => {
+        window.location = lastPage;
+      }, 3000); 
+    } else {
+      showMessage(data.message || "An error occurred. Please try again.", "red");
+    }
+  } catch (error) {
+    showMessage("An unexpected error occurred. Please try again.", "red");
+    console.error("Error:", error);
   }
 });
+
+
+function showMessage(message, color) {
+  const messageDiv = document.getElementById("message");
+  messageDiv.style.display = "block";
+  messageDiv.style.color = color;
+  messageDiv.textContent = message;
+
+  // Hide the message after 5 seconds
+  setTimeout(() => {
+    messageDiv.style.display = "none";
+  }, 5000);
+}
+
 
   // Get modal elements
   const modal = document.getElementById('forgotPasswordModal');
@@ -149,20 +188,7 @@ function showNotification(message, type) {
   }, 5000);
 }
 
-// Function to update the UI after login
-const updateUI = () => {
-  const welcomeMessage = document.getElementById("welcome-message");
-  const loginLink = document.getElementById("login-link");
-  const registerLink = document.getElementById("register-link");
-  const logoutLink = document.getElementById("logout-link");
 
-  // Get the username from localStorage
-  const name = localStorage.getItem("username");
-
-  // Update welcome message
-  welcomeMessage.innerHTML = `Welcome, ${name}!`;
-  logoutLink.style.display = "block";
-};
 
 // Function to handle user logout
 const logout = () => {
@@ -172,9 +198,4 @@ const logout = () => {
   window.location = "/";
 };
 
-// Update the UI on page load to handle session persistence
-document.addEventListener("DOMContentLoaded", () => {
-  if (localStorage.getItem("username")) {
-    updateUI();
-  }
-});
+
