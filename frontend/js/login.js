@@ -73,7 +73,6 @@ document.getElementById("submit2")?.addEventListener("click", async (e) => {
 
     if (response.ok) {
       localStorage.setItem("username", name);
-      updateUI();
       const lastPage = localStorage.getItem("lastPage") || "/courses";
       showMessage("Registration successful! Redirecting...", "green");
       setTimeout(() => {
